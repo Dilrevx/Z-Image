@@ -15,7 +15,9 @@ dependencies = [
     "loguru",
     "pillow",
     "accelerate",
-    "huggingface_hub>=0.25.0"
+    "huggingface_hub>=0.25.0",
+    "socksio>=1.0.0",
+    "bitsandbytes>=0.49.2",
 ]
 
 [project.optional-dependencies]
