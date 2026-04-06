@@ -267,7 +267,7 @@ def main() -> int:
             return 2
 
         image = (
-            (image_tensor.permute(1, 2, 0).detach().cpu().numpy() * 255.0)
+            (image_tensor.permute(1, 2, 0).detach().to(torch.float32).cpu().numpy() * 255.0)
             .round()
             .astype("uint8")
         )
